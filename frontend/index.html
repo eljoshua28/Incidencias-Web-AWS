@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incidencias Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Incidencias Web</h1>
+        <p>Sistema de registro y seguimiento de incidencias</p>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h2>Registrar incidencia</h2>
+
+            <form id="formIncidencia">
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" placeholder="Ej. Computadora no funciona" required>
+
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" placeholder="Describe el problema" required></textarea>
+
+                <button type="submit">Registrar incidencia</button>
+            </form>
+        </section>
+
+        <section class="reportes">
+            <h2>Incidencias registradas</h2>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Título</th>
+                            <th>Descripción</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaIncidencias">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto de servicios en AWS - 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
